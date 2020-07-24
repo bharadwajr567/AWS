@@ -1,3 +1,4 @@
+#Mapping holes
 def holes(num):
     map = {1:0, 2:0, 3:0, 5:0, 7:0, 0:1, 4:1, 6:1, 9:1, 8:2}
     num_str = str(num)
@@ -6,6 +7,7 @@ def holes(num):
         holes = holes + map[int(c)]
     return holes
 
+#Anagram difference
 def anagram_difference(a, b):
     c = []
     for i in range(len(a)):
@@ -26,6 +28,7 @@ def anagram_difference(a, b):
             c.append(int(diffs/2))
     return c
 
+#max count 
 def countMax(upRight):
     coords = []
     for i in range(0, len(upRight)):
@@ -56,6 +59,7 @@ def countMax(upRight):
 
     return count
 
+#LCM
 def lcm(a, b):
     greater = max(a, b)
 
@@ -64,6 +68,7 @@ def lcm(a, b):
             return greater
         greater += 1
 
+#Fraction Sums
 def reducedFractionSums(expressions):
     from fractions import Fraction
     sums = []

@@ -1,3 +1,4 @@
+# Partial Reversal 
 """def solution1(a, i, j):
     if not len(a):
         raise ValueError('Array is empty...')   
@@ -19,6 +20,7 @@ print  ("Actual result of is:" , a)
 print("expected result is:", (solution1(a, 2, 5)))
 
 
+#Holiday bush
 def holidaybush(n):
     z = n - 1
     x = 1
@@ -28,6 +30,7 @@ def holidaybush(n):
         z-=1
 holidaybush(5)
 
+#Reverse a Sentence
 def Sentence(s):
     '''input: str
     rtype:str'''
@@ -52,6 +55,7 @@ S = "BhAradwaj iS a GOod bOy"
 print(Sentence(S)) 
 #eBoY good is a BhARadwAj
 
+#Convert Opposite 
 def convertOpposite(str): 
     ln = len(str) 
   
@@ -77,7 +81,8 @@ if __name__ == "__main__":
   
     str = ''.join(str)
     print(str)
-   
+ 
+#Change case of a word  
 def changeCase(word):
     newword = ""                     # Create a blank string
     for i in range(0, len(word)):
@@ -97,6 +102,7 @@ if __name__ == "__main__":
     print(changeCase(w))
 
 
+#No of ways 
 def num_ways(s,memo):
     if s.startswith('0'):
         return 0
@@ -111,6 +117,7 @@ def num_ways(s,memo):
     return result
 num_ways(s,[None]*(len(s)+1))
 
+#Fibonacci series
 def fibonacci_recursion(num):
     '''Return a fibonacci sequence value of num'''
     if num == 0:
@@ -124,6 +131,7 @@ def fibonacci_recursion(num):
   
 print(fibonacci_recursion(9))
 
+#Sudoku
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         n = len(board) 
@@ -152,6 +160,7 @@ class Solution:
     
         return True
 
+#Factorial of a number
 def factorial(n):
     if n == 1:
         return 1
@@ -159,6 +168,7 @@ def factorial(n):
         return n * factorial(n-1)
 print(factorial(7))
 
+#Add interchanging logic Numbers
 class C:
     count = 0
     def __init__(self,a):
@@ -177,7 +187,7 @@ print("Value of y,z:", y, z)
 print(x + y +z)
 
 
-
+#Meeting ID's
 def kWay( A, k, overlap ) :
     
     #A = list of meeting IDs, k = number of rooms, 
@@ -252,6 +262,7 @@ for partition in kWay( A, k, overlap ) :
 [[4, 5], [3, 1], [2, 0]] [8, 10, 10]
 min( sum( [ max( size[x] for x in c ) for c in partition ] ) for partition in kWay( A, k, overlap ))
 
+#Different Products
 class Solution(object):
     def productExceptSelf(self, nums):
     
@@ -270,11 +281,13 @@ class Solution(object):
             output[x - 1] *= right
         return output
 
+#Count no of Zeros
 n = int(input("Enter a number: "))
 target = int(input("Enter a target variable: ")) 
 def count_zeros(n,target):
     return str(target).count('0')"""
 
+#Anagram Difference
 def anagram_difference(w1, w2):
     return helper(w1, w2) + helper(w2, w1)
 
